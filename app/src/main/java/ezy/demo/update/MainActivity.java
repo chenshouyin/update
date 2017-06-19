@@ -23,8 +23,10 @@ import android.view.View;
 import android.widget.Toast;
 
 import ezy.boost.update.ICheckAgent;
+import ezy.boost.update.IUpdateAgent;
 import ezy.boost.update.IUpdateChecker;
 import ezy.boost.update.IUpdateParser;
+import ezy.boost.update.IUpdatePrompter;
 import ezy.boost.update.UpdateInfo;
 import ezy.boost.update.UpdateManager;
 import ezy.boost.update.UpdateUtil;
@@ -34,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     String mCheckUrl = "http://client.waimai.baidu.com/message/updatetag";
-
     String mUpdateUrl = "https://qd.myapp.com/myapp/qqteam/AndroidQQ/mobileqq_android.apk";
 
     @Override
@@ -54,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.check_update_no_newer).setOnClickListener(this);
         findViewById(R.id.check_update_silent).setOnClickListener(this);
         findViewById(R.id.clean).setOnClickListener(this);
+
+
+
     }
 
     void check(boolean isManual, final boolean hasUpdate, final boolean isForce, final boolean isSilent, final boolean isIgnorable, final int
