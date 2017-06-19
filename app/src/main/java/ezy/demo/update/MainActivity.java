@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     String mCheckUrl = "http://client.waimai.baidu.com/message/updatetag";
 
-    String mUpdateUrl = "http://mobile.ac.qq.com/qqcomic_android.apk";
+    String mUpdateUrl = "https://qd.myapp.com/myapp/qqteam/AndroidQQ/mobileqq_android.apk";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +73,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 info.versionCode = 587;
                 info.versionName = "v5.8.7";
                 info.url = mUpdateUrl;
-                info.md5 = "56cf48f10e4cf6043fbf53bbbc4009e3";
+//                info.md5 = "56cf48f10e4cf6043fbf53bbbc4009e3";
+                info.md5 = "cb4139bd708487745edc7336121a71f7";
                 info.size = 10149314;
                 info.isForce = isForce;
                 info.isIgnorable = isIgnorable;
